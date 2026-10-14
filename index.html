@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f5f6f3" />
+    <title>Jessie HR｜结构化面试助手</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <header class="topbar">
+          <div class="brand" aria-label="Jessie HR">
+            <span class="brand-mark">J</span>
+            <span>Jessie HR</span>
+          </div>
+          <button class="icon-button" id="noticeButton" aria-label="消息通知">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg>
+            <i></i>
+          </button>
+        </header>
+
+        <div class="greeting">
+          <p class="eyebrow">GOOD MORNING</p>
+          <h1>早上好，Jessie <span>👋</span></h1>
+          <p>今天也一起发现更合适的人才。</p>
+        </div>
+
+        <article class="next-interview">
+          <div class="card-heading">
+            <span class="status-dot"></span>
+            <span>下一场面试</span>
+            <span class="countdown">14:30 开始</span>
+          </div>
+          <div class="candidate-row">
+            <div class="avatar">林<span>晓</span></div>
+            <div class="candidate-info">
+              <h2>林晓然</h2>
+              <p>高级产品经理 · 第二轮</p>
+            </div>
+            <button class="round-arrow" data-start aria-label="开始面试">
+              <svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+          <div class="meta-row">
+            <span><svg viewBox="0 0 24 24"><path d="M8 2v3m8-3v3M3 9h18M5 4h14a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2Z"/></svg>9月29日</span>
+            <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45 分钟</span>
+            <span><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 3v4m8-4v4"/></svg>腾讯会议</span>
+          </div>
+          <button class="primary-button" data-start>
+            <span>进入面试间</span>
+            <svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </article>
+      </section>
+
+      <section class="content">
+        <div class="section-title">
+          <div><p>QUICK START</p><h2>快捷开始</h2></div>
+          <button id="allTools">全部工具 <span>→</span></button>
+        </div>
+
+        <div class="quick-grid">
+          <button class="quick-card dark" data-start>
+            <span class="quick-icon"><svg viewBox="0 0 24 24"><path d="M8 5h8m-9 4h10m-9 4h8m-6 4h4M5 3h14v18H5z"/></svg></span>
+            <strong>开始结构化面试</strong>
+            <small>AI 实时辅助与记录</small>
+            <i>→</i>
+          </button>
+          <button class="quick-card warm" data-action="question">
+            <span class="quick-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v13H9l-5 4V4Z"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1 .5-1.5 1-1.5 2m0 2.5v.5"/></svg></span>
+            <strong>智能生成题库</strong>
+            <small>匹配岗位胜任力</small>
+            <i>→</i>
+          </button>
+        </div>
+
+        <div class="section-title schedule-title">
+          <div><p>TODAY</p><h2>今日安排 <span>3</span></h2></div>
+          <button id="calendarButton">查看日历 <span>→</span></button>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item active">
+            <div class="time"><strong>14:30</strong><span>下午</span></div>
+            <div class="line"><i></i></div>
+            <div class="schedule-card">
+              <div><span class="tag">产品中心</span><span class="tag round-two">第二轮</span></div>
+              <h3>林晓然 · 高级产品经理</h3>
+              <p>面试官：Jessie、陈墨</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="time"><strong>16:00</strong><span>下午</span></div>
+            <div class="line"><i></i></div>
+            <div class="schedule-card">
+              <div><span class="tag design">设计中心</span><span class="tag">第一轮</span></div>
+              <h3>周予安 · 资深视觉设计师</h3>
+              <p>面试官：Jessie</p>
+            </div>
+          </article>
+          <article class="timeline-item muted-item">
+            <div class="time"><strong>18:30</strong><span>晚上</span></div>
+            <div class="line"><i></i></div>
+            <div class="schedule-card"><h3>团队面试复盘</h3><p>招聘组 · 30 分钟</p></div>
+          </article>
+        </div>
+      </section>
+
+      <nav class="bottom-nav" aria-label="主导航">
+        <button class="active"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/></svg><span>首页</span></button>
+        <button><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM8 8h8m-8 4h8m-8 4h5"/></svg><span>面试</span></button>
+        <button class="center-action" data-start aria-label="快速开始"><span><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <button><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3"/></svg><span>数据</span></button>
+        <button><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>我的</span></button>
+      </nav>
+    </main>
+
+    <div class="toast" id="toast" role="status"></div>
+    <div class="sheet-backdrop" id="backdrop"></div>
+    <section class="action-sheet" id="actionSheet" aria-hidden="true">
+      <div class="sheet-handle"></div>
+      <button class="sheet-close" id="sheetClose" aria-label="关闭">×</button>
+      <span class="sheet-icon">✦</span>
+      <p class="eyebrow">AI INTERVIEW COPILOT</p>
+      <h2>准备开始结构化面试</h2>
+      <p>将为你实时记录要点，并基于胜任力模型提供追问建议。</p>
+      <div class="check-list"><span>✓ 自动生成逐字稿</span><span>✓ 关键能力智能评分</span><span>✓ 面试报告一键完成</span></div>
+      <button class="primary-button" id="confirmStart"><span>开始面试</span><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
